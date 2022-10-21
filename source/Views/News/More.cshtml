@@ -1,0 +1,13 @@
+﻿@model List<jQueryNinja.Models.NewsModel.NewsStruct>
+
+@{
+	Layout = null;
+}
+
+@if (Model != null)
+{
+	foreach (var news in Model)
+	{
+		@NewsModel.DrawTemplate(NewsModel.TemplateSimple(news))
+	}
+}

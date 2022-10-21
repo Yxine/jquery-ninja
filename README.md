@@ -1,2 +1,3 @@
-# jquery-ninja
-jQuery Ninja
+# jQuery Ninja
+
+> Версия 21.10.2022

@@ -1,0 +1,28 @@
+﻿<div class="text-center">
+	<h1 class="display-4">Песочница</h1>
+</div>
+
+<p>Проверка подключен ли jQuery:</p>
+
+<pre>
+window.onload = function () {
+	if (window.jQuery) {
+		alert('Да');
+	} else {
+		alert('Нет');
+	}
+}
+</pre>
+
+<p>Замыкание:</p>
+
+<pre>
+(function (p) {
+	p.css('background-color', '#c00');
+})($('p'));
+
+(function (p) {
+	var o = $(p);
+	o.css('background-color', '#c00');
+})('p');
+</pre>

@@ -1,0 +1,18 @@
+﻿@model List<jQueryNinja.Models.NewsModel.NewsStruct>
+
+<div class="text-center">
+	<h1 class="display-4">Новости (динамика)</h1>
+	<p>Новости выводятся динамически с помощью MVC.</p>
+</div>
+
+<div class="news">
+	@if (Model != null)
+	{
+		foreach (var news in Model)
+		{
+			@NewsModel.DrawTemplate(NewsModel.TemplateSimple(news))
+		}
+	}
+</div>
+
+<button class="btn w-100 btn-success" data-action="more-news">Еще новостей!</button>

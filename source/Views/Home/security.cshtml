@@ -1,0 +1,14 @@
+﻿@{
+	ViewBag.Security = "off";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Безопасность</h1>
+	<p>Некоторые важные аспекты безопасности</p>
+</div>
+
+<form action="/security" method="post">
+	<p><input class="form-control w-100" type="text" name="login" placeholder="Логин"></p>
+	<p><input class="form-control w-100" type="password" name="password" placeholder="Пароль"></p>
+	<button type="submit" class="btn btn-success w-100">Войти</button>
+</form>
